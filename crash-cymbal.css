@@ -1,0 +1,19 @@
+
+.crash{
+    width: 180px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fcc900;
+    background-image:  repeating-radial-gradient( circle at center, #fff4de78 0, #fae74d 5px), repeating-linear-gradient( #f7ff0073, #fff6d1 );
+    box-shadow: #feed66 0 0 20px 5px inset;
+    flex: 0 0 auto;
+    transform: skew(10deg, 10deg);
+    top: -120px;
+    position: relative;
+    left: 20px;
+    top: -80px;
+}
+
+.playing-KeyG{
+    transform: skew(30deg, 30deg) rotate(-0.05turn);
+}

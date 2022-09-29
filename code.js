@@ -15,10 +15,11 @@ window.onload=() =>
 {
     this.addEventListener("keypress",(a)=>{funkyPress(a)});
     let divs=document.querySelectorAll('.drum-kit >*');
-    console.log(divs);
+    
     divs.forEach(element => {
-        element.addEventListener('transitionend',()=>{element.classList.remove('playing')});
-        element.addEventListener('transitioncancel', ()=>{element.classList.remove('playing')})
+        console.log(`playing-${element.dataset.key}`);
+        element.addEventListener('transitionend',()=>{element.classList.remove(`playing-${element.dataset.key}`)});
+        element.addEventListener('transitioncancel', ()=>{element.classList.remove(`playing-${element.dataset.key}`)})
     });
 
 }
@@ -30,7 +31,7 @@ function funkyPress(k)
     
     howlers[k.code].play();
     let div=document.querySelector(`div [data-key="${k.code}"] `);
-    div.classList.add('playing');
+    div.classList.add(`playing-${k.code}`);
    
 
 }

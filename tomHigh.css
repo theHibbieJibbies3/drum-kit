@@ -1,100 +1,75 @@
 
 :root {
-    --snare-color: #fff231;
+    --tom-color: #fff231;
   }
 
-.drum-kit{
-    margin: 0 auto;
-    margin-top: 10rem;
-    height: 8rem;
-  
-    width: 80%;
-    gap: 1rem;
-    justify-content: space-evenly;
 
 
-}
-.drum-kit >*{
- 
-    
-    /* height: 8rem;
-    background-color: ghostwhite;
-    border: 2px solid black;
-    border-radius: 50%;
-    text-align: center; */
-    transition:all 0.07s;
-}
-
-
-
-.playing-KeyA{
-    transform: scale(1.1);
-   
-}
-
-.snare{
+.tom{
     position:relative;
-    top: 100px;
-    left: 200px;
+     margin:0;
+     transform: scale(0.6,1.2);
+     
+    left: 60px;
 }
 
-.snare-middle{
+.tom-middle{
     width:120px;
     height:40px;
-    background-color:var(--snare-color);
+    background-color:var(--tom-color);
     position:absolute;
     z-index: -3;
 }
 
 
-.snare-top{
-    width: 114px;
+.tom-top{
+    width: 111px;
 	height: 43px;
 	background-color:rgb(117, 167, 184);
 	border-radius: 60px / 25px;
     position:absolute;
     top:-20px;
-    left: 2px;
+    left: 4px;
 }
-.snare-shade{
-    width: 80px;
-	height: 30px;
-	background-color:#88bfef;
+.tom-shade{
+    width: 96px;
+	height: 33px;
+	background-color:#8aabc8;
 	border-radius: 60px / 25px;
     position:absolute;
     top: -13px;
-    left: 10px;
+    left: 9px;
 }
-.snare-circle{
-    width: 122px;
+.tom-circle{
+    width: 124px;
     height: 51px;
     background-color: #bcb5b5;
     border-radius: 60px / 25px;
     position: absolute;
     z-index: -1;
     top: -23px;
-    left: -1px;
+    left: -3px;
   
     
 }
 
-.snare-shine{
+.tom-shine{
     width: 4px;
-	height: 39px;
+	height: 47px;
 	background-color: #ffff9a;
     position:absolute;
     border-radius: 20%;
     top:14px;
-    left:109px;
+    left:87px;
     
 
     z-index: -2;
 }
 
-.snare-bottom{
+.tom-bottom{
     width: 120px;
 	height: 50px;
-	background-color: var(--snare-color);
+	background-color: var(--tom-color);
 	border-radius: 60px / 25px;
     position:absolute;
     top:15px;
@@ -102,31 +77,31 @@
     z-index: -3;
 }
 
-.snare-shine-2 {
+.tom-shine-2 {
     width: 4px;
-    height: 29px;
+    height: 30px;
     background-color: #fefe60;
     position: absolute;
     border-radius: 20%;
     top: 18px;
-    left: 112px;
+    left: 86px;
     z-index: -2;
   }
-  .snare-shine-3 {
+  .tom-shine-3 {
     width: 5px;
-    height: 45px;
+    height: 38px;
     background-color: #ffff85;
     position: absolute;
     border-radius: 20%;
     top: 16px;
-    left: 30px;
+    left: 11px;
     z-index: -2;
   }
   
-.snare-circle-bot {
+.tom-circle-bot {
 
   width: 122px;
-	height: 51px;
+	height: 45px;
 	background-color:#bcb5b5;
 	border-radius: 60px / 25px;
     position:absolute;
@@ -135,4 +110,8 @@
     
 
     left: -1px;
+}
+.playing-KeyK{
+    transform: scale(1.1);
+   
 }
